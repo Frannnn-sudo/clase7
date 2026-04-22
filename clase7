@@ -1,1 +1,129 @@
+# Práctica Clases 1
+# Crea una clase llamada Personaje y a continuación, crea un objeto a partir de ella, por ejemplo: harry_potter
+
+class personaje:
+ def __init__(self,name):
+     self.name=name
+
+harry_potter = personaje("harry_potter")
+print(harry_potter.name)
+print(type(harry_potter))
+
+
+# Práctica Clases 2
+# Crea una clase llamada Dinosaurio, y tres instancias a partir de ella: velociraptor, tiranosaurio_rex y braquiosaurio .
+class Dinosaurio:
+
+    def __init__(self, name):
+        self.name = name
+
+velociraptor = Dinosaurio("Velociraptor")
+tiranosaurio = Dinosaurio("Tiranosaurio")
+
+print(velociraptor.name)
+print(type(velociraptor))
+print(tiranosaurio.name)
+print(type(tiranosaurio))
+
+
+# Práctica Clases 3
+# Crea una clase llamada PlataformaStreaming y crea los siguientes objetos a partir de ella: netflix, hbo_max, amazon_prime_video
+class plataforma:
+    def __init__(self, name):
+        self.name = name
+netflix = plataforma("netflix")
+hbo = plataforma("hbo")
+amazon = plataforma("amazon")
+
+print(netflix.name)
+print(type(netflix))
+print(hbo.name)
+print(type(hbo))
+print(amazon.name)
+print(type(amazon))
+
+# Práctica Atributos 1
+# Crea una clase llamada Casa, y asígnale atributos: color, cantidad_pisos.
+# Crea una instancia de Casa, llamada casa_blanca, de color "blanco" y cantidad de pisos igual a 4.
+class casa:
+    def __init__(self, name, color, pisos):
+        self.name = name
+        self.color = color
+        self.pisos = pisos
+
+casa_1= casa("primera casa","blanca", "4")
+print("mi" , casa_1.name, "de color", casa_1.color, "con" , casa_1.pisos, "pisos")
+
+# Práctica Atributos 2
+# Crea una clase llamada Cubo, y asígnale el atributo de clase:
+# caras = 6
+# y el atributo de instancia:
+# color
+# Crea una instancia cubo_rojo, de dicho color.
+class cubo:
+    def __init__(self, caras, color):
+        self.caras = "6"
+        self.color = color
+
+cubo1= cubo(caras = "6", color = "rojo")
+print("tengo un cubo de ", cubo1.caras , "caras de color", cubo1.color)
+
+
+
+
+# Práctica Atributos 3
+# Crea una clase llamada Personaje, y asígnale el siguiente atributo de clase:
+# real = False
+# Crea una instancia llamada harry_potter con los siguientes atributos de instancia:
+# especie = "Humano"
+# magico = True
+# edad = 17
+class personaje:
+ def __init__(self,name):
+     self.name=name
+     self.real= "false"
+     self.especie="humano"
+     self.edad= "17"
+
+harry_potter = personaje(name= "harry potter")
+print(harry_potter.name)
+
+# Práctica Métodos 1
+# Crea una clase Perro. Dicho perro debe poder ladrar.
+# Crea el método ladrar() y ejecútalo en una instancia de Perro. Cada vez que ladre, debe mostrarse en pantalla "Guau!".
+class perro:
+    def __init__(self,nombre):
+        self.nombre = nombre
+
+    def ladrar(self):
+      print("GUAU GUAU GUAUUUUU")
+perro = perro("perro")
+perro.ladrar()
+
+# Práctica Métodos 2
+# Crea una clase llamada Mago, y crea un método llamado lanzar_hechizo() (deberá imprimir "¡Abracadabra!").
+# Crea una instancia de Mago en el objeto merlin, y haz que lance un hechizo.
+class mago:
+    def __init__(self,nombre):
+        self.nombre = nombre
+
+    def hechizo(self):
+        print("ABRACADABRAAA")
+
+mago = mago("merlin")
+mago.hechizo()
+
+
+# Práctica Métodos 3
+# Crea una instancia de la clase Alarma, que tenga un método llamado postergar(cantidad_minutos). El método debe imprimir en pantalla el mensaje
+# "La alarma ha sido pospuesta {cantidad_minutos} minutos"
+class alarma:
+    def __init__(self,nombre):
+        self.nombre = nombre
+
+    def posterga(self):
+        print("ALARMA POSTERGADA 5 MINUTOS")
+
+alarma = alarma("alarma")
+alarma.posterga()
 
